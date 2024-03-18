@@ -7,3 +7,4 @@ extension RemoveAll on String {
       ) =>
           result.replaceAll(pattern, ''));
 }
+

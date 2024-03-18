@@ -1,4 +1,4 @@
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:testingriverpod/state/post_settings/models/post_setting.dart';
 import 'package:testingriverpod/state/post_settings/notifiers/post_settings_notifier.dart';
 

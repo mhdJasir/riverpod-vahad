@@ -1,6 +1,6 @@
 import 'dart:collection' show UnmodifiableMapView;
 
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:testingriverpod/state/post_settings/models/post_setting.dart';
 
 class PostSettingNotifier extends StateNotifier<Map<PostSetting, bool>> {

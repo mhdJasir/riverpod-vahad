@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:testingriverpod/state/posts/providers/all_posts_provider.dart';
 import 'package:testingriverpod/views/components/animations/empty_contents_with_text_animation_view.dart';
 import 'package:testingriverpod/views/components/animations/error_animation_view.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:testingriverpod/state/auth/providers/user_id_provider.dart';
 import 'package:testingriverpod/state/likes/models/like_dislike_request.dart';
 import 'package:testingriverpod/state/likes/providers/has_liked_post_provider.dart';

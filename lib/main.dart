@@ -1,9 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:testingriverpod/state/auth/providers/is_logged_in_provider.dart';
 
-import 'firebase_options.dart';
 import 'state/providers/is_loading_provider.dart';
 import 'views/components/loading/loading_screen.dart';
 import 'views/login/login_view.dart';
@@ -12,7 +11,7 @@ import 'views/main/main_view.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
+    // options: DefaultFirebaseOptions.currentPlatform,
   );
   runApp(
     const ProviderScope(
@@ -30,6 +29,7 @@ class App extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     // calculate widget to show
     return MaterialApp(
+      title: 'Riverpod',
       darkTheme: ThemeData(
         brightness: Brightness.dark,
         primarySwatch: Colors.blueGrey,
@@ -43,7 +43,6 @@ class App extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       home: Consumer(
         builder: (context, ref, child) {
-          // install the loading screen
           ref.listen<bool>(
             isLoadingProvider,
             (_, isLoading) {
@@ -57,7 +56,7 @@ class App extends ConsumerWidget {
             },
           );
           final isLoggedIn = ref.watch(isLoggedInProvider);
-          if (isLoggedIn) {
+            if (isLoggedIn) {
             return const MainView();
           } else {
             return const LoginView();

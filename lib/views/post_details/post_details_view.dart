@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:testingriverpod/enums/date_sorting.dart';
 import 'package:testingriverpod/state/comments/models/post_comments_request.dart';

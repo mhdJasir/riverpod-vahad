@@ -1,4 +1,4 @@
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:testingriverpod/state/auth/backend/authenticator.dart';
 import 'package:testingriverpod/state/auth/models/auth_result.dart';
 import 'package:testingriverpod/state/auth/models/auth_state.dart';

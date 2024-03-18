@@ -1,4 +1,4 @@
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:testingriverpod/state/auth/providers/user_id_provider.dart';
 import 'package:testingriverpod/state/posts/models/post.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:testingriverpod/state/auth/providers/auth_state_provider.dart';
 import 'package:testingriverpod/views/constants/app_colors.dart';
 import 'package:testingriverpod/views/constants/strings.dart';
@@ -13,6 +13,9 @@ class LoginView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    ref.listen(authStateProvider, (previous, next) {
+
+    });
     return Scaffold(
       appBar: AppBar(
         title: const Text(

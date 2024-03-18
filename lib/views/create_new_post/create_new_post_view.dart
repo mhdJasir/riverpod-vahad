@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:testingriverpod/state/auth/providers/user_id_provider.dart';
 import 'package:testingriverpod/state/image_upload/models/file_type.dart';
 import 'package:testingriverpod/state/image_upload/models/thumbnail_request.dart';
@@ -12,7 +12,7 @@ import 'package:testingriverpod/state/post_settings/providers/post_settings_prov
 import 'package:testingriverpod/views/components/file_thumbnail_view.dart';
 import 'package:testingriverpod/views/constants/strings.dart';
 
-class CreateNewPostView extends StatefulHookConsumerWidget {
+class CreateNewPostView extends ConsumerStatefulWidget {
   final File fileToPost;
   final FileType fileType;
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:testingriverpod/state/auth/providers/user_id_provider.dart';
 import 'package:testingriverpod/state/comments/models/comment.dart';
 import 'package:testingriverpod/state/comments/providers/delete_comment_provider.dart';

@@ -1,4 +1,5 @@
+import 'package:flutter/material.dart';
+
 extension Log on Object {
-  // ignore: avoid_print
-  void log() => print(toString());
+  void log() => debugPrint(toString());
 }
